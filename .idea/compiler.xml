@@ -8,13 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-aspect" />
         <module name="spring-boot-rocketMQ" />
-        <module name="spring-boot-UnitTest" />
+        <module name="SpringBootUnitTest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-boot-aspect" target="1.8" />
       <module name="spring-boot-rocketMQ" target="1.8" />
       <module name="spring-boot-UnitTest" target="1.8" />
+      <module name="SpringBootUnitTest" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

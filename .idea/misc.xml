@@ -6,6 +6,8 @@
         <option value="$PROJECT_DIR$/spring-boot-rocketMQ/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootUnitTest/pom.xml" />
         <option value="$PROJECT_DIR$/test-aspect/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-UnitTest/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-aspect/pom.xml" />
       </list>
     </option>
   </component>

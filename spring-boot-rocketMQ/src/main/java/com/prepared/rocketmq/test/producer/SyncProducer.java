@@ -13,7 +13,7 @@ import java.io.UnsupportedEncodingException;
 /**
  * 可靠同步传输广泛应用于重要通知信息、短信通知、短信营销系统等场景。
  *
- * @Author: zhongshibo
+ * @Author: prepared
  * @Date: 2021/7/19 14:00
  */
 public class SyncProducer {

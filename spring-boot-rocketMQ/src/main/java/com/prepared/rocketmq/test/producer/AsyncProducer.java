@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 异步传输通常用于响应时间敏感的业务场景。
  *
- * @Author: zhongshibo
+ * @Author: prepared
  * @Date: 2021/7/19 14:15
  */
 public class AsyncProducer {
