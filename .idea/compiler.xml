@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-aspect" />
+        <module name="spring-boot-rocketMQ" />
+        <module name="spring-boot-UnitTest" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-boot-aspect" target="1.8" />
+      <module name="spring-boot-rocketMQ" target="1.8" />
+      <module name="spring-boot-UnitTest" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring-boot-UnitTest" options="-parameters" />
+      <module name="spring-boot-aspect" options="-parameters" />
+      <module name="spring-boot-rocketMQ" options="-parameters" />
+    </option>
+  </component>
+</project>

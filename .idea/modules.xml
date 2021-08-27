@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-UnitTest/spring-boot-UnitTest.iml" filepath="$PROJECT_DIR$/spring-boot-UnitTest/spring-boot-UnitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-aspect/spring-boot-aspect.iml" filepath="$PROJECT_DIR$/spring-boot-aspect/spring-boot-aspect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spring-boot-learning.iml" filepath="$PROJECT_DIR$/.idea/spring-boot-learning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-rocketMQ/spring-boot-rocketMQ.iml" filepath="$PROJECT_DIR$/spring-boot-rocketMQ/spring-boot-rocketMQ.iml" />
+    </modules>
+  </component>
+</project>
