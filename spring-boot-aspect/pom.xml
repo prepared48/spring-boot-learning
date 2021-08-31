@@ -11,7 +11,7 @@
     <groupId>com.prepared</groupId>
     <artifactId>spring-boot-aspect</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>test-aspect</name>
+    <name>spring-boot-aspect</name>
     <description>Demo project for aspect test</description>
     <properties>
         <java.version>1.8</java.version>

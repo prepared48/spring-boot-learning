@@ -11,8 +11,10 @@
 	<groupId>com.prepared</groupId>
 	<artifactId>spring-boot-rocketMQ</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+
 	<name>spring-boot-rocketMQ</name>
 	<description>Demo project for Spring Boot integrate rocketMQ</description>
+
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
