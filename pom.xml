@@ -17,8 +17,9 @@
 		<module>spring-boot-aspect</module>
 		<module>spring-boot-rocketMQ</module>
 		<module>spring-boot-UnitTest</module>
-		<module>spring-boot-UnitTest</module>
+		<module>spring-boot-mybatis-plus</module>
 		<module>spring-boot-mybatis-plus-hot-reload</module>
+		<module>spring-boot-redis</module>
 	</modules>
 
 	<build>
