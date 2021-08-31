@@ -20,6 +20,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringBootUnitTest" options="-parameters" />
       <module name="spring-boot-UnitTest" options="-parameters" />
       <module name="spring-boot-aspect" options="-parameters" />
       <module name="spring-boot-rocketMQ" options="-parameters" />
