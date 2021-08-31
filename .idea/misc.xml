@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/test-aspect/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-UnitTest/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-aspect/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-mybatis-plus-hot-reload-master/pom.xml" />
       </list>
     </option>
   </component>
