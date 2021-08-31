@@ -5,7 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring-boot-UnitTest/SpringBootUnitTest.iml" filepath="$PROJECT_DIR$/spring-boot-UnitTest/SpringBootUnitTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-aspect/spring-boot-aspect.iml" filepath="$PROJECT_DIR$/spring-boot-aspect/spring-boot-aspect.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/spring-boot-learning.iml" filepath="$PROJECT_DIR$/.idea/spring-boot-learning.iml" />
-      <module fileurl="file://$PROJECT_DIR$/spring-boot-mybatis-plus-hot-reload/spring-boot-mybatis-plus-hot-reload.iml" filepath="$PROJECT_DIR$/spring-boot-mybatis-plus-hot-reload/spring-boot-mybatis-plus-hot-reload.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prepared-mybatis-plus/spring-boot-mybatis-plus.iml" filepath="$PROJECT_DIR$/prepared-mybatis-plus/spring-boot-mybatis-plus.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" filepath="$PROJECT_DIR$/spring-boot-redis/spring-boot-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-boot-rocketMQ/spring-boot-rocketMQ.iml" filepath="$PROJECT_DIR$/spring-boot-rocketMQ/spring-boot-rocketMQ.iml" />
     </modules>
