@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/spring-boot-redis/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-mybatis-plus-hot-reload-master/pom.xml" />
         <option value="$PROJECT_DIR$/prepared-mybatis-plus/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-mybatis-plus-hot-reload/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-mybatis-plus/pom.xml" />
       </list>
     </option>
   </component>

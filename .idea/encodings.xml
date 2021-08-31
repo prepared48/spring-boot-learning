@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/spring-boot-UnitTest/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-aspect/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-mybatis-plus-hot-reload/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-mybatis-plus/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-rocketMQ/src/main/java" charset="UTF-8" />

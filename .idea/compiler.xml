@@ -11,6 +11,7 @@
         <module name="spring-boot-UnitTest" />
         <module name="spring-boot-rocketMQ" />
         <module name="spring-boot-redis" />
+        <module name="spring-boot-mybatis-plus-hot-reload" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
