@@ -9,6 +9,9 @@ Spring Boot 2.0 工作中碰到的一些需要测试或者需要整合的组件�
 - spring-boot-aspect: Spring Boot 2.0 切面日志
 - spring-boot-rocketMQ：Spring Boot 2.0 整合 rocketMQ
 - spring-boot-UnitTest：Spring Boot 2.0 单元测试
+- spring-boot-mybatis-plus：Spring Boot 2.0 整合 MyBatis-plus
+- spring-boot-mybatis-plus-hot-reload：Spring Boot 2.0 整合 MyBatis-plus，支持xml热加载
+- spring-boot-mybatis-redis：Spring Boot 2.0 整合 Redis
 
 ## 参考文章
 

@@ -15,7 +15,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-boot-aspect" target="1.8" />
-      <module name="spring-boot-mybatis-plus" target="1.5" />
+      <module name="spring-boot-mybatis-plus" target="1.8" />
       <module name="spring-boot-mybatis-plus-hot-reload" target="1.8" />
       <module name="spring-boot-redis" target="1.8" />
       <module name="spring-boot-rocketMQ" target="1.8" />
@@ -26,6 +26,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="spring-boot-UnitTest" options="-parameters" />
       <module name="spring-boot-aspect" options="-parameters" />
+      <module name="spring-boot-mybatis-plus" options="-parameters" />
       <module name="spring-boot-mybatis-plus-hot-reload" options="-parameters" />
       <module name="spring-boot-rocketMQ" options="-parameters" />
     </option>
