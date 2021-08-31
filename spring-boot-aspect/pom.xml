@@ -8,8 +8,8 @@
         <version>2.4.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.example</groupId>
-    <artifactId>demo</artifactId>
+    <groupId>com.prepared</groupId>
+    <artifactId>spring-boot-aspect</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>test-aspect</name>
     <description>Demo project for aspect test</description>

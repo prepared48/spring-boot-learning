@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.prepared</groupId>
-	<artifactId>springboot-mybatis-plus-hot-reload</artifactId>
+	<artifactId>spring-boot-mybatis-plus-hot-reload</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-mybatis-plus-hot-reload</name>
 	<description>springboot 集成 mybatis-plus并实现热加载</description>
