@@ -1,4 +1,4 @@
-package com.prepared.bean;
+package com.prepared.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -6,12 +6,10 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
-import java.util.Date;
-
 /**
  *
  *
- * @Author: zhongshibo
+ * @Author: prepared
  * @Date: 2020/3/10 13:40
  */
 @Data

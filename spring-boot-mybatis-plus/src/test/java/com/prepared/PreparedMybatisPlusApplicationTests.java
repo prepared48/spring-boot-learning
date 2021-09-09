@@ -1,8 +1,8 @@
 package com.prepared;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.prepared.bean.User;
-import com.prepared.bean.UserTest;
+import com.prepared.entity.User;
+import com.prepared.entity.UserTest;
 import com.prepared.mapper.UserMapper;
 import com.prepared.mapper.UserTestMapper;
 import com.prepared.service.UserService;

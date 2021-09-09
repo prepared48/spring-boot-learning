@@ -1,4 +1,4 @@
-package com.prepared.bean;
+package com.prepared.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -10,7 +10,7 @@ import java.util.Date;
 /**
  * 主键，数据库指定了自增User
  *
- * @Author: zhongshibo
+ * @Author: prepared
  * @Date: 2020/3/10 13:40
  */
 @Data
