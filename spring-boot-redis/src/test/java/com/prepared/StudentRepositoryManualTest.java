@@ -1,42 +1,44 @@
 package com.prepared;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
-
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
-import com.prepared.config.RedisConfig;
+import com.prepared.config.LettuceRedisConfig;
 import com.prepared.dao.StudentRepository;
 import com.prepared.entity.Student;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.annotation.DirtiesContext.ClassMode;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-
-
-
 import redis.embedded.RedisServerBuilder;
 
+import javax.annotation.Resource;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
+
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = RedisConfig.class)
+@ContextConfiguration(classes = LettuceRedisConfig.class)
 @DirtiesContext(classMode = ClassMode.BEFORE_CLASS)
 public class StudentRepositoryManualTest {
 
-    @Autowired
+    @Resource
     private StudentRepository studentRepository;
     
     private static redis.embedded.RedisServer redisServer;
-    
+
+    /**
+     * 起一个内嵌 redis，如果本地起了redis，需要修改端口号
+     *
+     * @throws IOException
+     */
     @BeforeClass
     public static void startRedisServer() throws IOException {
-        redisServer = new RedisServerBuilder().port(6379).setting("maxmemory 128M").build();
+        redisServer = new RedisServerBuilder().port(6380).setting("maxmemory 128M").build();
         redisServer.start();
     }
     
