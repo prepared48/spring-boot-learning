@@ -25,4 +25,6 @@ Spring Boot 2.0 工作中碰到的一些需要测试或者需要整合的组件�
 
 [springboot集成MongoDB](https://blog.csdn.net/Prepared/article/details/103777965?spm=1001.2014.3001.5502)
 
+[spring boot整合mybatis-plus](https://blog.csdn.net/Prepared/article/details/120206625?spm=1001.2014.3001.5501)
+
 [springcloud redis 缓存使用注意事项](https://blog.csdn.net/Prepared/article/details/82699100?spm=1001.2014.3001.5502)
