@@ -6,12 +6,14 @@ Spring Boot 2.0 工作中碰到的一些需要测试或者需要整合的组件�
  
 ## 示例代码
 
-- spring-boot-aspect: Spring Boot 2.0 切面日志
-- spring-boot-rocketMQ：Spring Boot 2.0 整合 rocketMQ
-- spring-boot-UnitTest：Spring Boot 2.0 单元测试
-- spring-boot-mybatis-plus：Spring Boot 2.0 整合 MyBatis-plus
-- spring-boot-mybatis-plus-hot-reload：Spring Boot 2.0 整合 MyBatis-plus，支持xml热加载
-- spring-boot-mybatis-redis：Spring Boot 2.0 整合 Redis
+- [spring-boot-aspect](https://github.com/prepared48/spring-boot-learning/tree/main/spring-boot-UnitTest): Spring Boot 2.0 切面日志
+- [spring-boot-elasticsearch](https://github.com/prepared48/spring-boot-learning/tree/main/spring-boot-elasticsearch)：Spring Boot 2.0 整合Elasticsearch
+- [spring-boot-mybatis-plus](https://github.com/prepared48/spring-boot-learning/tree/main/spring-boot-mybatis-plus)：Spring Boot 2.0 整合 MyBatis-plus
+- [spring-boot-mybatis-plus-hot-reload](https://github.com/prepared48/spring-boot-learning/tree/main/spring-boot-mybatis-plus-hot-reload)：Spring Boot 2.0 整合 MyBatis-plus，支持xml热加载
+- [spring-boot-redis](https://github.com/prepared48/spring-boot-learning/tree/main/spring-boot-redis)：Spring Boot 2.0 整合 redis
+- [spring-boot-rocketMQ](https://github.com/prepared48/spring-boot-learning/tree/main/spring-boot-rocketMQ)：Spring Boot 2.0 整合 rocketMQ
+- [spring-boot-UnitTest](https://github.com/prepared48/spring-boot-learning/tree/main/spring-boot-UnitTest)：Spring Boot 2.0 单元测试
+- [spring-boot-mybatis-redis](https://github.com/prepared48/spring-boot-learning/tree/main/spring-boot-mybatis-redis)：Spring Boot 2.0 整合 Redis
 
 ## 参考文章
 
