@@ -11,7 +11,7 @@
 	<groupId>com.prepared</groupId>
 	<artifactId>spring-boot-mybatis-plus-hot-reload</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-mybatis-plus-hot-reload</name>
+	<name>spring-boot-mybatis-plus-hot-reload</name>
 	<description>springboot 集成 mybatis-plus并实现热加载</description>
 
 	<properties>
