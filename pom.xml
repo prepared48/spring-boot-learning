@@ -1,35 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.prepared</groupId>
-	<artifactId>spring-boot-learning</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-boot-learning</name>
-	<description>Demo project for learning Spring Boot</description>
-	<properties>
-		<java.version>1.8</java.version>
-		<mybatis.plus.version>3.1.0</mybatis.plus.version>
-	</properties>
+    <groupId>com.prepared</groupId>
+    <artifactId>spring-boot-learning</artifactId>
+    <packaging>pom</packaging>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>spring-boot-learning</name>
+    <description>Demo project for learning Spring Boot</description>
+    <properties>
+        <java.version>1.8</java.version>
+        <mybatis.plus.version>3.1.0</mybatis.plus.version>
 
-	<modules>
-		<module>spring-boot-aspect</module>
-		<module>spring-boot-rocketMQ</module>
-		<module>spring-boot-UnitTest</module>
-		<module>spring-boot-mybatis-plus</module>
-		<module>spring-boot-mybatis-plus-hot-reload</module>
-		<module>spring-boot-redis</module>
-		<module>spring-boot-elasticsearch</module>
-	</modules>
+        <reactor.version>3.4.22</reactor.version>
+        <junit.version>4.11</junit.version>
+        <h2.version>2.1.214</h2.version>
+    </properties>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-		</plugins>
-	</build>
+    <modules>
+        <module>spring-boot-aspect</module>
+        <module>spring-boot-rocketMQ</module>
+        <module>spring-boot-UnitTest</module>
+        <module>spring-boot-mybatis-plus</module>
+        <module>spring-boot-mybatis-plus-hot-reload</module>
+        <module>spring-boot-redis</module>
+        <module>spring-boot-elasticsearch</module>
+        <module>spring-boot-reactor</module>
+    </modules>
+
+    <!--父 pom 管理包版本-->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor-core</artifactId>
+                <version>${reactor.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.projectreactor</groupId>
+                <artifactId>reactor-test</artifactId>
+                <version>${reactor.version}</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.h2database</groupId>
+                <artifactId>h2</artifactId>
+                <version>${h2.version}</version>
+                <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.24</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

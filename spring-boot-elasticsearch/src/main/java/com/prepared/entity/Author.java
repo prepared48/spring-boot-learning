@@ -5,7 +5,7 @@ import org.springframework.data.elasticsearch.annotations.Field;
 import static org.springframework.data.elasticsearch.annotations.FieldType.Text;
 
 /**
- * @Author: zhongshibo
+ * @Author: prepared
  * @Date: 2021/9/10 11:43
  */
 public class Author {
