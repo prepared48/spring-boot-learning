@@ -5,7 +5,6 @@ import com.prepared.user.domain.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
-import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import javax.annotation.Resource;
@@ -57,19 +56,6 @@ public class UserService {
 		return Mono.fromSupplier(() -> {
 					return userRepository.findAll();
 				}).doOnError(e -> {
-					// 打印异常日志&增加监控（自行处理）
-					logger.error("list.user.error, e", e);
-				})
-				.doFinally(e -> {
-					// 耗时 & 整体健康
-					logger.info("list.user.time={}, ", System.currentTimeMillis() - startTime);
-				});
-	}
-
-	public Flux<User> listFlux() {
-		long startTime = System.currentTimeMillis();
-		return Flux.fromIterable(userRepository.findAll())
-				.doOnError(e -> {
 					// 打印异常日志&增加监控（自行处理）
 					logger.error("list.user.error, e", e);
 				})

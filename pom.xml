@@ -16,6 +16,7 @@
         <reactor.version>3.4.22</reactor.version>
         <junit.version>4.11</junit.version>
         <h2.version>2.1.214</h2.version>
+        <resilience4j.version>1.7.1</resilience4j.version>
     </properties>
 
     <modules>
@@ -27,6 +28,7 @@
         <module>spring-boot-redis</module>
         <module>spring-boot-elasticsearch</module>
         <module>spring-boot-reactor</module>
+        <module>spring-boot-resilience4j</module>
     </modules>
 
     <!--父 pom 管理包版本-->
@@ -48,6 +50,16 @@
                 <artifactId>h2</artifactId>
                 <version>${h2.version}</version>
                 <scope>runtime</scope>
+            </dependency>
+            <dependency>
+                <groupId>io.github.resilience4j</groupId>
+                <artifactId>resilience4j-all</artifactId>
+                <version>${resilience4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.resilience4j</groupId>
+                <artifactId>resilience4j-spring-boot2</artifactId>
+                <version>${resilience4j.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.projectlombok</groupId>

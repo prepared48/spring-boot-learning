@@ -5,11 +5,9 @@ import com.prepared.user.service.UserService;
 import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import javax.annotation.Resource;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -23,6 +21,7 @@ public class UserController {
 	@Resource
 	private UserService userService;
 
+	@RateLimiter(name = "backendA")
 	@RequestMapping("/add")
 	public Mono<Boolean> add() {
 		User user = new User("xiaoming", 10, "F");
@@ -34,10 +33,5 @@ public class UserController {
 	@RequestMapping("/list")
 	public Mono<List<User>> list() {
 		return userService.list();
-	}
-
-	@RequestMapping("/listFlux")
-	public Flux<User> listFlux() {
-		return userService.listFlux();
 	}
 }
