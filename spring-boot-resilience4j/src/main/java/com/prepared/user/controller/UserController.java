@@ -2,12 +2,14 @@ package com.prepared.user.controller;
 
 import com.prepared.user.domain.User;
 import com.prepared.user.service.UserService;
-import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
 import javax.annotation.Resource;
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -17,19 +19,20 @@ import java.util.List;
 @RestController
 public class UserController {
 
+	private Logger logger = LoggerFactory.getLogger(UserController.class);
 
 	@Resource
 	private UserService userService;
 
-	@RateLimiter(name = "backendA")
 	@RequestMapping("/add")
-	public Mono<Boolean> add() {
+	public Mono<Boolean> add() throws IOException {
+		logger.info("invoke.add.user");
 		User user = new User("xiaoming", 10, "F");
+//		throw new IOException("插入数据失败");
 		return userService.save(user) ;
 
 	}
 
-	@RateLimiter(name = "backendA")
 	@RequestMapping("/list")
 	public Mono<List<User>> list() {
 		return userService.list();

@@ -2,6 +2,10 @@ package com.prepared.user.service;
 
 import com.prepared.user.dao.UserRepository;
 import com.prepared.user.domain.User;
+import io.github.resilience4j.bulkhead.annotation.Bulkhead;
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import io.github.resilience4j.ratelimiter.annotation.RateLimiter;
+import io.github.resilience4j.retry.annotation.Retry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -22,6 +26,10 @@ public class UserService {
 	@Resource
 	private UserRepository userRepository;
 
+	@Bulkhead(name = "")
+	@CircuitBreaker(name = "backendA")
+	@Retry(name = "backendA")
+	@RateLimiter(name = "backendA")
 	public Mono<Boolean> save(User user) {
 		long startTime = System.currentTimeMillis();
 		return Mono.fromSupplier(() -> {
@@ -51,6 +59,10 @@ public class UserService {
 				});
 	}
 
+	@Bulkhead(name = "")
+	@CircuitBreaker(name = "backendA")
+	@Retry(name = "backendA")
+	@RateLimiter(name = "backendA")
 	public Mono<List<User>> list() {
 		long startTime = System.currentTimeMillis();
 		return Mono.fromSupplier(() -> {
